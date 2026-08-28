@@ -106,7 +106,7 @@ export default function HelpPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 12 }}>
               {GUIDES.map((guide) => (
                 <a key={guide.title} href={guide.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                  <Card hoverable style={{ padding: '16px' }}>
+                  <Card style={{ padding: '16px' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                       <span style={{ fontSize: 26 }}>{guide.icon}</span>
                       <div>

@@ -54,7 +54,7 @@ export default function ITSupportPage() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: 12 }}>
           {otherLinks.map((item) => (
             <a key={item.id} href={item.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-              <Card hoverable style={{ padding: '18px' }}>
+              <Card style={{ padding: '18px' }}>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
                   <span style={{ fontSize: 28, flexShrink: 0 }}>{item.icon}</span>
                   <div style={{ flex: 1 }}>

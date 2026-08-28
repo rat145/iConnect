@@ -56,7 +56,7 @@ export default function HRPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 12 }}>
             {section.items.map((item) => (
               <a key={item.id} href={item.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                <Card hoverable style={{ padding: '18px' }}>
+                <Card style={{ padding: '18px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                     <span style={{ fontSize: 28 }}>{item.icon}</span>
                     <div style={{ flex: 1, overflow: 'hidden' }}>
