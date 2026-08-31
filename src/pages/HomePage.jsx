@@ -75,7 +75,7 @@ export default function HomePage() {
       {/* ── Quick Links ── */}
       <div style={{ marginBottom: 32 }}>
         <SectionHeader title="Quick Links" linkTo="/quick-links" />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
+        <div className="home-grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
           {quickLinks.map((ql) => (
             <a key={ql.id} href={ql.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
               <Card hoverable style={{ padding: '16px', display: 'flex', alignItems: 'center', gap: 12 }}>
@@ -113,7 +113,7 @@ export default function HomePage() {
       {/* ── News ── */}
       <div style={{ marginBottom: 32 }}>
         <SectionHeader title="Company News" />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
+        <div className="home-grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
           {news.map((item) => (
             <Card key={item.id} hoverable>
               <Badge label={item.category} style={{ marginBottom: 10 }} />
@@ -210,7 +210,7 @@ export default function HomePage() {
       {/* ── Events ── */}
       <div style={{ marginBottom: 32 }}>
         <SectionHeader title="Upcoming Events" />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
+        <div className="home-grid-3"style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
           {events.map((ev) => {
             const d = new Date(ev.date);
             const dayNum = d.toLocaleDateString('en-IN', { day: '2-digit' });
@@ -238,7 +238,7 @@ export default function HomePage() {
       {/* ── Directory Spotlight ── */}
       <div style={{ marginBottom: 16 }}>
         <SectionHeader title="Directory Spotlight" linkTo="/directory" />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12 }}>
+        <div className="home-grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12 }}>
           {spotlight.map((emp) => (
             <Card key={emp.id} hoverable style={{ padding: '20px 16px', textAlign: 'center' }}>
               <Avatar name={emp.name} picture={emp.avatar} size={48} style={{ margin: '0 auto 10px' }} />
