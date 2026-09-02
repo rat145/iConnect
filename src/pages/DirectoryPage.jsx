@@ -89,7 +89,16 @@ export default function DirectoryPage() {
               <Badge label={emp.department} style={{ marginBottom: 12 }} />
               <div style={{ borderTop: '1px solid #f0f0f0', paddingTop: 10, display: 'flex', flexDirection: 'column', gap: 4 }}>
                 <a href={`mailto:${emp.email}`} style={{ fontSize: '0.75rem', color: '#0075de', textDecoration: 'none', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>✉️ {emp.email}</a>
-                <span style={{ fontSize: '0.75rem', color: '#a39e98' }}>📞 {emp.phone}</span>
+                <a
+                  href={`tel:${emp.phone}`}
+                  style={{
+                    fontSize: '0.75rem',
+                    color: '#a39e98',
+                    textDecoration: 'none'
+                  }}
+                >
+                  📞 {emp.phone}
+                </a>
                 {emp.location && <span style={{ fontSize: '0.75rem', color: '#a39e98' }}>📍 {emp.location}</span>}
               </div>
             </Card>
