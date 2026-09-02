@@ -93,12 +93,15 @@ export default function DirectoryPage() {
                   href={`tel:${emp.phone}`}
                   style={{
                     fontSize: '0.75rem',
-                    color: '#a39e98',
-                    textDecoration: 'none'
+                    color: '#0075de',
+                    textDecoration: 'none',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                    whiteSpace: 'nowrap'
                   }}
-                >
+               >
                   📞 {emp.phone}
-                </a>
+               </a>
                 {emp.location && <span style={{ fontSize: '0.75rem', color: '#a39e98' }}>📍 {emp.location}</span>}
               </div>
             </Card>
