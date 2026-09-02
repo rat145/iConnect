@@ -112,7 +112,7 @@ export default function HomePage() {
 
       {/* ── News ── */}
       <div style={{ marginBottom: 32 }}>
-        <SectionHeader title="Company News" />
+        <SectionHeader title="Company News" linkTo="/quick-links" />
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
           {news.map((item) => (
             <Card key={item.id} hoverable>
