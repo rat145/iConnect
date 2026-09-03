@@ -211,6 +211,7 @@ export default function HomePage() {
       <div style={{ marginBottom: 32 }}>
         <SectionHeader title="Upcoming Events" />
         <div className="home-grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
+        <div className="home-grid-3"style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
           {events.map((ev) => {
             const d = new Date(ev.date);
             const dayNum = d.toLocaleDateString('en-IN', { day: '2-digit' });
