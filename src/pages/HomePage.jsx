@@ -78,7 +78,7 @@ export default function HomePage() {
         <div className="home-grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
           {quickLinks.map((ql) => (
             <a key={ql.id} href={ql.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-              <Card hoverable style={{ padding: '16px', display: 'flex', alignItems: 'center', gap: 12 }}>
+              <Card style={{ padding: '16px', display: 'flex', alignItems: 'center', gap: 12 }}>
                 <span style={{ fontSize: 28 }}>{ql.icon}</span>
                 <div style={{ overflow: 'hidden' }}>
                   <div style={{ fontWeight: 600, fontSize: '0.875rem', color: '#000', marginBottom: 3, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{ql.title}</div>
@@ -131,7 +131,7 @@ export default function HomePage() {
       {/* ── Documents ── */}
       <div style={{ marginBottom: 32 }}>
         <SectionHeader title="Key Documents" linkTo="/documents" />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 12 }}>
+        <div className="home-grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 12 }}>
           {documents.map((doc) => (
             <Card key={doc.id} hoverable>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
@@ -210,6 +210,7 @@ export default function HomePage() {
       {/* ── Events ── */}
       <div style={{ marginBottom: 32 }}>
         <SectionHeader title="Upcoming Events" />
+        <div className="home-grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
         <div className="home-grid-3"style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
           {events.map((ev) => {
             const d = new Date(ev.date);
